@@ -1,0 +1,23 @@
+h1, h2 {
+    color: darkviolet;
+}
+
+p:first-of-type {
+    color: firebrick;
+}
+
+
+.list li {
+    color: blue;
+}
+
+
+li.done {
+    color: seagreen;
+}
+
+
+p.done {
+    font-size: 0.6rem;
+    color: black; 
+}

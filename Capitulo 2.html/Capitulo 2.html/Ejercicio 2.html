@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores CSS</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        
+            background-color: #1e1e1e;
+            color: #d4d4d4; 
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            background-color: #2a2a2a;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Seletores CSS (h1)</h1>
+    <h2>Aplicando CSS a Diferentes Partes do HTML (h2)</h2>
+
+    <ol>
+        <li>
+            1. O seletor de elemento mira nos elementos com base no nome da tag HTML.
+        </li>
+
+        <li class="note" value="2">
+            2. Seletores de classe miram nos elementos com base no valor do atributo class.
+        </li>
+
+        <li class="note" id="id-selector-demo" value="3">
+            3. Seletores de ID miram nos elementos com base no valor do atributo id.
+        </li>
+
+        <li class="note" value="4">
+            4. Seletores de atributo miram nos elementos com base em seus atributos e valores.
+        </li>
+
+        <li class="note" value="5">
+            5. O seletor universal mira em todos os elementos.
+        </li>
+    </ol>
+</body>
+</html>
