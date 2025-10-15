@@ -1,0 +1,16 @@
+a{
+    display: block;
+}
+.conteudo {
+    float: left;
+    width: 70%;
+  }
+  
+  aside {
+    float: right;
+    width: 25%;
+  }
+  
+  footer {
+    clear: both;
+  }

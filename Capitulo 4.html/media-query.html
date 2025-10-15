@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
+<!-- 
+  TODO: Change the background color for each device
+  [lightsalmon] Mobile Devices: 319px — 480px
+  [powderblue] iPads and Tablets: 481px — 1200px
+  [limegreen] Laptops: 1201px — 1600px
+  [seagreen] Desktops: 1601px and more
+-->
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <title>Media Query</title>
   <style>
-    div {
-      background-color: rebeccapurple;
-      height: 500px;
-      width: 500px;
+    body {
+      background-color: aquamarine;
     }
 
-    @media (max-width: 600px) {
-
-  
-      div {
-        height: 200px;
-        width: 200px;
-      }
+    @media (min-width: 319px) and (max-width: 480px){
+    body{
+      background-color: black;
+    }  
     }
-   
+
+    @media (min-width: 419px) and (max-width: 1200px){
+    body{
+      background-color: teal;
+    }  
+    }
+
+    @media (min-width: 12011px) and (max-width: 1600px){
+    body{
+      background-color: yellow;
+    }  
+    }
+
+    @media (min-width: 1601px) and (max-width: 2000px){
+    body{
+      background-color: green;
+    }  
+    }
   </style>
 </head>
 
 <body>
-  <h1>Media Query</h1>
-  <div></div>
 </body>
 
 </html>
