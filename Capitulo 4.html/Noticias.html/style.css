@@ -1,16 +1,217 @@
-a{
-    display: block;
+/* ------------------------------------------- */
+/* 1. Estilos Base e Reset */
+/* ------------------------------------------- */
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura/altura */
+    margin: 0;
+    padding: 0;
 }
-.conteudo {
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------------------------------------------- */
+/* 2. Cabeçalho e Navegação */
+/* ------------------------------------------- */
+header {
+    background-color: #000055; /* Azul Escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: block; /* Garante que ocupe toda a largura */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+    display: flex; /* Transforma em menu horizontal */
+    justify-content: center;
+    background-color: #000077;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0000aa;
+}
+
+
+/* ------------------------------------------- */
+/* 3. Área Principal (Layout com Float) */
+/* ------------------------------------------- */
+main {
+    max-width: 1000px;
+    margin: 20px auto; /* Centraliza a área principal */
+    padding: 0 10px;
+}
+
+/* Conteúdo Principal (70%) */
+.conteudo-principal {
     float: left;
     width: 70%;
-  }
-  
-  aside {
+    padding-right: 20px; /* Espaço entre o conteúdo e a sidebar */
+}
+
+/* Barra Lateral (25%) */
+.barra-lateral {
     float: right;
     width: 25%;
-  }
-  
-  footer {
+    background-color: #e9e9f3; /* Cinza claro */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Limpar o float antes do rodapé */
+footer {
     clear: both;
-  }
+}
+
+/* Cartões de Notícia */
+.noticia-card {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: box-shadow 0.3s ease; /* Desafio Extra: Efeito hover */
+}
+
+.noticia-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.noticia-card img {
+    width: 100%; /* Imagem ocupando toda a largura do card */
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.btn-leiamais {
+    display: inline-block;
+    background-color: #000055;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Estilo da Barra Lateral */
+.barra-lateral h3 {
+    color: #000055;
+    border-bottom: 2px solid #000055;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.barra-lateral li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.barra-lateral li a:hover {
+    color: #ff6600; /* Laranja no hover */
+}
+
+.barra-lateral form input, 
+.barra-lateral form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.barra-lateral form button {
+    background-color: #000055;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------- */
+/* 4. Rodapé */
+/* ------------------------------------------- */
+footer {
+    background-color: #222; /* Fundo escuro */
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+
+/* ------------------------------------------- */
+/* 5. Responsividade (Media Queries) */
+/* ------------------------------------------- */
+
+/* Para telas menores que 768px (Mobile) */
+@media (max-width: 768px) {
+    
+    /* 1. Resetar Layout Principal */
+    .conteudo-principal, 
+    .barra-lateral {
+        float: none; /* Remove o float */
+        width: 100%; /* Ocupa 100% da largura */
+        padding-right: 0; /* Remove padding lateral que causa gap */
+        margin-bottom: 20px; /* Adiciona espaço entre as seções */
+    }
+
+    /* 2. Navegação Vertical (Desafio Extra) */
+    nav ul {
+        flex-direction: column; /* Transforma o menu horizontal em vertical */
+    }
+    
+    nav ul li a {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* 3. Ajuste de Estilos */
+    header h1 {
+        font-size: 2em; /* Diminui a fonte do título */
+    }
+    
+    .noticia-card {
+        text-align: center; /* Centraliza o texto dos cards */
+    }
+    
+    .barra-lateral {
+        text-align: center; /* Centraliza o conteúdo da sidebar */
+    }
+    
+    .barra-lateral form input, 
+    .barra-lateral form button {
+        text-align: left; /* Mantém o texto de input alinhado à esquerda */
+    }
+}
