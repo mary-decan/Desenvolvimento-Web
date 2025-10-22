@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechNews - Seu Portal de Notícias</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>TechNews</h1>
-        <h2>Escola sem violencia</h2>
+        <div class="banner">
+            <h1>TechNews</h1>
+            <p>Seu Portal Diário de Tecnologia e Inovação</p>
+        </div>
         <nav>
-            <a href="./noticias">Noticias</a>
-            <a href="./inicio">Inicio</a>
-            <a href="./contato">Contato</a>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Análises</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    
+
+    <main>
+        
+        <section class="conteudo-principal">
+            
+            <article class="noticia-card">
+                <h2>O Futuro dos Carros Elétricos</h2>
+                <img src="img/assets/nt1.jpeg" alt="Carro elétrico futurista">
+                <p>A nova geração de veículos elétricos promete revolucionar o mercado automobilístico com maior autonomia e IA embarcada. Analisamos as principais tendências e lançamentos para 2025...</p>
+                <a href="#" class="btn-leiamais">Leia Mais</a>
+            </article>
+
+            <article class="noticia-card">
+                <h2>Web 3.0: O que esperar da internet descentralizada?</h2>
+                <img src="img/assets/nt2.jpeg" alt="Gráfico de tecnologia descentralizada">
+                <p>Blockchain, NFTs e metaversos. O conceito de Web 3.0 está ganhando força e moldando o futuro digital. Entenda como essa tecnologia impactará sua vida e seus negócios...</p>
+                <a href="#" class="btn-leiamais">Leia Mais</a>
+            </article>
+
+            <article class="noticia-card">
+                <h2>Guia Completo: Produtividade com IA</h2>
+                <img src="img/assets/nt3.jpeg" alt="Pessoa trabalhando com auxílio de IA">
+                <p>Ferramentas de inteligência artificial não são mais luxo, mas necessidade. Aprenda a usar assistentes virtuais para otimizar seu tempo e aumentar sua eficiência no trabalho...</p>
+                <a href="#" class="btn-leiamais">Leia Mais</a>
+            </article>
+
+        </section>
+
+        <aside class="barra-lateral">
+            <h3>Categorias Populares</h3>
+            <ul>
+                <li><a href="#">Inteligência Artificial</a></li>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Games e E-Sports</a></li>
+                <li><a href="#">Cibersegurança</a></li>
+                <li><a href="#">Startups</a></li>
+            </ul>
+
+            <h3>Assine Nossa Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Assinar</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechNews | Desenvolvido por [Mariangel Soutte].</p>
+    </footer>
+
 </body>
 </html>
