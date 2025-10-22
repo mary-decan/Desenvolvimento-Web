@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: yellow;
+    padding: 10px 20px;
+    
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-list li{
+    margin-right: 20px;
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: purple;
+    font-weight: 16px;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    white-space: nowrap;
+}
+
