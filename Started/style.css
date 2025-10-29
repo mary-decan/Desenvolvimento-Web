@@ -1,0 +1,262 @@
+:root {
+    --cor-principal: #0A74DA;
+    --cor-secundaria: #00A896;
+    --cor-fundo: #f2f2f2;
+    --cor-texto: #333;
+    --cor-clara: #ffffff;
+    --padding-secao: 80px 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+h1, h2 {
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+section {
+    padding: var(--padding-secao);
+}
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: var(--cor-clara);
+    padding: 20px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor-clara);
+}
+
+.menu-navegacao a {
+    color: var(--cor-clara);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: var(--cor-secundaria);
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-clara);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+    background-color: #008f7e;
+    transform: translateY(-2px);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1600x600/0A74DA/FFFFFF?text=StartEdu+|+Aprenda.+Crie.+Evolua.');
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-clara);
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    color: var(--cor-clara);
+    font-size: 3.5em;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+}
+
+.sobre-nos {
+    background-color: var(--cor-clara);
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destaques {
+    background-color: var(--cor-fundo);
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card-destaque {
+    background-color: var(--cor-clara);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex-basis: calc(33.333% - 20px);
+    flex-grow: 1;
+    transition: transform 0.3s;
+}
+
+.card-destaque:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-destaque h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.cursos-section {
+    padding-top: 100px;
+}
+
+.grade-cursos {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-curso {
+    background-color: var(--cor-clara);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-curso:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-curso img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.curso-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.curso-info h3 {
+    margin-bottom: 10px;
+    color: var(--cor-principal);
+}
+
+.curso-info p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    flex-grow: 1;
+}
+
+.curso-info .botao {
+    align-self: flex-start;
+    padding: 8px 15px;
+}
+
+.contato-section {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.formulario-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--cor-clara);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.formulario-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--cor-texto);
+}
+
+.formulario-container input[type="text"],
+.formulario-container input[type="email"],
+.formulario-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.formulario-container input:focus,
+.formulario-container textarea:focus {
+    border-color: var(--cor-principal);
+    outline: none;
+}
+
+.formulario-container textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formulario-container .botao {
+    margin-top: 10px;
+    align-self: center;
+    }
