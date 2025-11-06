@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Diversos exemplos do sistema de 12 Colunas</title>
+  <style>
+    body {
+      background: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 90%;
+      margin: 40px auto;
+    }
+    .titulo {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .row {
+      display: flex;
+      margin-bottom: 12px;
+    }
+    .col {
+      background: #b4babf;
+      color: #222;
+      font-weight: bold;
+      margin: 2px;
+      text-align: center;
+      padding: 8px 0;
+      border-radius: 2px;
+    }
+    .col-1  { flex: 1;  }
+    .col-2  { flex: 2;  }
+    .col-3  { flex: 3;  }
+    .col-4  { flex: 4;  }
+    .col-6  { flex: 6;  }
+    .col-8  { flex: 8;  }
+    .col-12 { flex: 12; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titulo">Diversos exemplos do sistema de 12 Colunas</div>
+
+    <div class="row">
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+      <div class="col col-1">1</div>
+    </div>
+    <div class="row">
+      <div class="col col-3">3</div>
+      <div class="col col-3">3</div>
+      <div class="col col-3">3</div>
+      <div class="col col-3">3</div>
+    </div>
+    <div class="row">
+      <div class="col col-4">4</div>
+      <div class="col col-4">4</div>
+      <div class="col col-4">4</div>
+    </div>
+    <div class="row">
+      <div class="col col-6">6</div>
+      <div class="col col-6">6</div>
+    </div>
+    <div class="row">
+      <div class="col col-4">4</div>
+      <div class="col col-8">8</div>
+    </div>
+    <div class="row">
+      <div class="col col-12">12</div>
+    </div>
+  </div>
+</body>
+</html>
