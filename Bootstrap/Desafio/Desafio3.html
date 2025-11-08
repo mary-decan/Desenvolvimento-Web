@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Personagens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .card {
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            height: 100%; 
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <header>
+            <h1 class="text-center my-4 display-4 fw-bold text-dark">Catálogo de Personagens</h1>
+            <p class="text-center text-muted mb-5">Explore alguns dos personagens mais icônicos da ficção.</p>
+        </header>
+
+  
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./img/l.jpeg" class="card-img-top" alt="Luke Skywalker" onerror="this.onerror=null;this.src='https://placehold.co/600x200/4a7495/ffffff?text=Imagem+N%C3%A3o+Dispon%C3%ADvel';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Luke Skywalker</h5>
+                        <p class="card-text text-secondary mb-4">
+                            O Cavaleiro Jedi que ascendeu de um simples fazendeiro a herói da Aliança Rebelde. Mestre na Força e portador do sabre de luz.
+                        </p>
+                        <a href="#" class="btn btn-secondary mt-auto">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./img/h.jpeg" class="card-img-top" alt="Hermione Granger" onerror="this.onerror=null;this.src='https://placehold.co/600x200/964b00/ffffff?text=Imagem+N%C3%A3o+Dispon%C3%ADvel';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Hermione Granger</h5>
+                        <p class="card-text text-secondary mb-4">
+                            A bruxa mais inteligente de sua época, uma das fundadoras da Armada de Dumbledore e essencial para a derrota de Você-Sabe-Quem.
+                        </p>
+                        <a href="#" class="btn btn-secondary mt-auto">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./img/s.jpeg" class="card-img-top" alt="Sherlock Holmes" onerror="this.onerror=null;this.src='https://placehold.co/600x200/343a40/ffffff?text=Imagem+N%C3%A3o+Dispon%C3%ADvel';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Sherlock Holmes</h5>
+                        <p class="card-text text-secondary mb-4">
+                            O lendário detetive consultor de Londres, famoso por seu raciocínio lógico, habilidade de disfarce e ciência forense.
+                        </p>
+                        <a href="#" class="btn btn-secondary mt-auto">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./img/d.jpeg" class="card-img-top" alt="Daenerys Targaryen" onerror="this.onerror=null;this.src='https://placehold.co/600x200/800080/ffffff?text=Imagem+N%C3%A3o+Dispon%C3%ADvel';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-primary fw-bold">Daenerys Targaryen</h5>
+                        <p class="card-text text-secondary mb-4">
+                            Nascida da Tormenta, a Quebradora de Correntes e Mãe de Dragões. Uma figura de poder e ambição.
+                        </p>
+                        <a href="#" class="btn btn-secondary mt-auto">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+
+   
+    <footer class="text-center py-3 bg-dark text-light mt-5">
+        <p class="m-0">© 2025 Catálogo Interativo | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
