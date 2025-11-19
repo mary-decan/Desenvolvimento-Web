@@ -1,0 +1,1 @@
+console.log("Nome: Mariangel/nIdade: 18");
