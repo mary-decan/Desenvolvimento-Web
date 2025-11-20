@@ -1,24 +1,24 @@
-function verificarAprovacao() {
-    const notaInput = prompt("3. Verificação de Aprovação:\nDigite a nota final do aluno (ex: 7.5):");
-    const faltasInput = prompt("3. Digite o número de faltas (total de 100 aulas):");
-    
-    const nota = parseFloat(notaInput);
-    const faltas = parseInt(faltasInput);
-    
-    const LIMITE_FALTAS = 25;
+const readline = require('readline-sync');
 
-    if (isNaN(nota) || isNaN(faltas) || faltas < 0) {
-        alert("3. Entrada inválida para nota ou faltas.");
-        return;
-    }
+console.log("\n--- 3. Verificação de Aprovação ---");
+const TOTAL_AULAS = 100;
+const LIMITE_FALTAS = 0.25 * TOTAL_AULAS; 
+const NOTA_MINIMA = 7.0;
 
-    let resultado;
+let entradaNota = readline.question("Digite a nota final do aluno: ");
+let entradaFaltas = readline.question("Digite o numero de faltas: ");
+
+let nota = parseFloat(entradaNota);
+let faltas = parseInt(entradaFaltas);
+
+if (isNaN(nota) || isNaN(faltas)) {
+    console.log("Entradas invalidas para nota ou faltas.");
+} else {
     if (faltas > LIMITE_FALTAS) {
-        resultado = `3. Situação: **Reprovado por Faltas** (${faltas} faltas > ${LIMITE_FALTAS} limite).\n`;
-    } else if (nota >= 7) {
-        resultado = `3. Situação: **Aprovado** (Nota ${nota} e Faltas ${faltas}).\n`;
+        console.log(`REPROVADO POR FALTAS. Limite maximo: ${LIMITE_FALTAS}. Faltas: ${faltas}.`);
+    } else if (nota < NOTA_MINIMA) {
+        console.log(`REPROVADO POR NOTA. Nota minima: ${NOTA_MINIMA}. Nota: ${nota}.`);
     } else {
-        resultado = `3. Situação: **Reprovado por Nota** (Nota ${nota} < 7).\n`;
+        console.log(`APROVADO! Nota: ${nota}, Faltas: ${faltas}.`);
     }
-    alert(resultado);
 }

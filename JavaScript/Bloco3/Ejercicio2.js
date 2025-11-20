@@ -1,11 +1,13 @@
-let entradaValor = prompt("Digite um valor monetário (decimal):");
+const readline = require('readline-sync');
+console.log("--- 2. Aumento Percentual ---");
+
+let entradaValor = readline.question("Digite um valor monetario (ex: 100.50): "); 
 let valorMonetario = parseFloat(entradaValor);
 
 if (!isNaN(valorMonetario)) {
-    
-    let valorAumentado = valorMonetario * 1.1;
-    console.log(`O valor original é: ${valorMonetario}`);
-    console.log(`O valor com aumento de 10% é: ${valorAumentado.toFixed(2)}`); 
+    let valorAumentado = valorMonetario * 1.1; 
+    console.log(`Valor original: R$ ${valorMonetario.toFixed(2)}`);
+    console.log(`Valor com +10%: R$ ${valorAumentado.toFixed(2)}`);
 } else {
-    console.log(`Entrada inválida. Por favor, digite um valor monetário válido.`);
+    console.log(`Entrada invalida. Digite um valor monetario valido.`);
 }

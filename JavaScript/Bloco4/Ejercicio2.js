@@ -1,21 +1,15 @@
-function elevarAoQuadrado() {
-    const input = prompt("2. Elevação ao Quadrado:\nDigite um número:");
-    const num = parseFloat(input);
+const readline = require('readline-sync');
+console.log("\n--- 2. Elevação ao Quadrado ou Erro ---");
+let entrada2 = readline.question("Digite um numero (positivo para calcular o quadrado): ");
+let numero2 = parseFloat(entrada2);
 
-    if (isNaN(num)) {
-        alert("2. Entrada inválida. Por favor, digite um número.");
-        return;
-    }
-
-    let resultado;
-    if (num > 0) {
-        const quadrado = num * num;
-        resultado = `2. O número é positivo. O resultado de ${num} ao quadrado é **${quadrado}**.\n`;
-    } else if (num < 0) {
-        resultado = "2. O número é negativo. **Número inválido** para esta operação.\n";
+if (!isNaN(numero2)) {
+    if (numero2 > 0) {
+        let quadrado = numero2 * numero2;
+        console.log(`O numero ${numero2} elevado ao quadrado e: ${quadrado}`);
     } else {
-        resultado = "2. O número é zero. O resultado de 0 ao quadrado é **0**.\n";
+        console.log("Numero invalido. O numero digitado nao e positivo.");
     }
-    alert(resultado);
+} else {
+    console.log("Entrada invalida.");
 }
-
