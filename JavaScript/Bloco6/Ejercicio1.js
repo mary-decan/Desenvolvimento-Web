@@ -1,5 +1,4 @@
 const readline = require('readline-sync');
-console.log("\n--- 1. Contagem Regressiva ---");
-for (let i = 10; i >= 1; i--) {
-    console.log(i);
-}
+console.log("--- 1. Inicialização e Impressão ---");
+let vetor1 = [10, 20, 30, 40, 50];
+console.log("Vetor de 5 inteiros:", vetor1);
