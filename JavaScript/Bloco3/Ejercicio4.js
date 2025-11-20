@@ -1,16 +1,13 @@
-const entradaLargura = prompt("4. Escribe la anchura del rectángulo:");
-const entradaAltura = prompt("4. Escribe la altura del rectángulo:");
+let entradaLargura = prompt("Digite a largura do retângulo:");
+let entradaAltura = prompt("Digite a altura do retângulo:");
 
-const largura = parseFloat(entradaLargura);
-const altura = parseFloat(entradaAltura);
+let largura = parseFloat(entradaLargura);
+let altura = parseFloat(entradaAltura);
 
 if (!isNaN(largura) && !isNaN(altura)) {
-    const perimetro = 2 * (largura + altura);
-
-    console.log(`\n--- 4. Cálculo de Perímetro ---`);
-    console.log(`Anchura: ${largura}, Altura: ${altura}`);
-    console.log(`El perímetro del rectángulo es: ${perimetro.toFixed(2)}`);
+    let perimetro = 2 * (largura + altura);
+    console.log(`Retângulo: Largura = ${largura}, Altura = ${altura}`);
+    console.log(`O perímetro do retângulo é: ${perimetro}`);
 } else {
-    console.log(`\n--- 4. Cálculo de Perímetro ---`);
-    console.log("Entrada no válida. Por favor, escribe valores numéricos válidos para anchura y altura.");
+    console.log(`Uma ou ambas as entradas são inválidas. Por favor, digite números para largura e altura.`);
 }

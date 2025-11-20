@@ -1,14 +1,11 @@
-const entradaMilhas = prompt("3. Escribe una distancia en millas para convertirla a kilómetros:");
-const distanciaMilhas = parseFloat(entradaMilhas);
+let entradaMilhas = prompt("Digite uma distância em milhas:");
+let milhas = parseFloat(entradaMilhas);
+const FATOR_CONVERSAO = 1.60934;
 
-if (!isNaN(distanciaMilhas)) {
-    const factorConversao = 1.60934;
-    const distanciaQuilometros = distanciaMilhas * factorConversao;
 
-    console.log(`\n--- 3. Conversión de Millas a Kilómetros ---`);
-    console.log(`Distancia en Millas: ${distanciaMilhas.toFixed(2)} mi`);
-    console.log(`Distancia en Kilómetros: ${distanciaQuilometros.toFixed(2)} km`);
+if (!isNaN(milhas)) {
+    let quilometros = milhas * FATOR_CONVERSAO;
+    console.log(`${milhas} milhas equivalem a ${quilometros.toFixed(3)} quilômetros.`);
 } else {
-    console.log(`\n--- 3. Conversión de Millas a Kilómetros ---`);
-    console.log("Entrada no válida. Por favor, escribe una distancia numérica válida.");
+    console.log(`Entrada inválida. Por favor, digite uma distância válida em milhas.`);
 }
