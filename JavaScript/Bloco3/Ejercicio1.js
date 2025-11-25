@@ -1,11 +1,14 @@
-const entradaDobro = prompt("1. Escribe un número entero para calcular el doble:");
-const numeroDobro = parseInt(entradaDobro);
+const readline = require('readline-sync'); 
 
-if (!isNaN(numeroDobro)) {
-    const resultadoDobro = numeroDobro * 2;
-    console.log(`\n--- 1. Cálculo del Doble ---`);
-    console.log(`El doble de ${numeroDobro} es: ${resultadoDobro}`);
+console.log("--- 1. Cálculo do Dobro ---");
+
+
+let entradaDobro = readline.question("1. Digite um numero inteiro para calcularmos o dobro: ");
+let numeroInteiro = parseInt(entradaDobro);
+
+if (!isNaN(numeroInteiro)) {
+    let dobro = numeroInteiro * 2;
+    console.log(`O dobro de ${numeroInteiro} é: ${dobro}`);
 } else {
-    console.log(`\n--- 1. Cálculo del Doble ---`);
-    console.log("Entrada no válida. Por favor, escribe un número entero válido.");
+    console.log(`Entrada inválida. Digite um numero inteiro.`);
 }

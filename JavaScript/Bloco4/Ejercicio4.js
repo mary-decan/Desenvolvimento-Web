@@ -1,27 +1,22 @@
-function classificarNatacao() {
-    const idadeInput = prompt("4. Classificação de Natação:\nDigite a idade da pessoa:");
-    const idade = parseInt(idadeInput);
+const readline = require('readline-sync');
+console.log("\n--- 4. Classificação de Categoria de Natação ---");
+let entradaIdade = readline.question("Digite a idade do nadador: ");
+let idade = parseInt(entradaIdade);
 
-    if (isNaN(idade) || idade < 0) {
-        alert("4. Idade inválida.");
-        return;
-    }
-
-    let categoria = "";
-
+if (isNaN(idade) || idade < 0) {
+    console.log("Idade invalida.");
+} else {
     if (idade >= 5 && idade <= 7) {
-        categoria = "Infantil A (5-7 anos)";
+        console.log("Categoria: Infantil A");
     } else if (idade >= 8 && idade <= 10) {
-        categoria = "Infantil B (8-10 anos)";
+        console.log("Categoria: Infantil B");
     } else if (idade >= 11 && idade <= 13) {
-        categoria = "Juvenil A (11-13 anos)";
+        console.log("Categoria: Juvenil A");
     } else if (idade >= 14 && idade <= 17) {
-        categoria = "Juvenil B (14-17 anos)";
+        console.log("Categoria: Juvenil B");
     } else if (idade >= 18) {
-        categoria = "Adulto (maiores de 18 anos)";
-    } else {
-        categoria = "Idade não se encaixa nas categorias mínimas (menor que 5 anos)";
+        console.log("Categoria: Adulto");
+    } else { 
+        console.log("Nao ha categoria para esta idade (menor que 5 anos).");
     }
-
-    alert(`4. Idade: ${idade} anos. Categoria: **${categoria}**.\n`);
 }

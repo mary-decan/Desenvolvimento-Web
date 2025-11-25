@@ -1,22 +1,16 @@
-const FORMATTER = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+const readline = require('readline-sync');
+console.log("--- 1. Classificação de Número ---");
+let entrada1 = readline.question("Digite um numero: ");
+let numero1 = parseFloat(entrada1);
 
-
-function classificarNumero() {
-    const input = prompt("1. Classificação de Número:\nDigite um número:");
-    const num = parseFloat(input);
-
-    if (isNaN(num)) {
-        alert("1. Entrada inválida. Por favor, digite um número.");
-        return;
-    }
-
-    let resultado;
-    if (num > 0) {
-        resultado = `1. O número ${num} é **positivo**.\n`;
-    } else if (num < 0) {
-        resultado = `1. O número ${num} é **negativo**.\n`;
+if (!isNaN(numero1)) {
+    if (numero1 > 0) {
+        console.log(`O numero ${numero1} e POSITIVO.`);
+    } else if (numero1 < 0) {
+        console.log(`O numero ${numero1} e NEGATIVO.`);
     } else {
-        resultado = "1. O número é **zero**.\n";
+        console.log(`O numero e ZERO.`);
     }
-    alert(resultado);
+} else {
+    console.log("Entrada invalida.");
 }

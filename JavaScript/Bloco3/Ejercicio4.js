@@ -1,16 +1,15 @@
-const entradaLargura = prompt("4. Escribe la anchura del rectángulo:");
-const entradaAltura = prompt("4. Escribe la altura del rectángulo:");
+const readline = require('readline-sync');
+console.log("\n--- 4. Calculo de Perimetro ---");
+let entradaLargura = readline.question("Digite a largura do retangulo: ");
+let entradaAltura = readline.question("Digite a altura do retangulo: ");
 
-const largura = parseFloat(entradaLargura);
-const altura = parseFloat(entradaAltura);
+let largura = parseFloat(entradaLargura);
+let altura = parseFloat(entradaAltura);
 
 if (!isNaN(largura) && !isNaN(altura)) {
-    const perimetro = 2 * (largura + altura);
-
-    console.log(`\n--- 4. Cálculo de Perímetro ---`);
-    console.log(`Anchura: ${largura}, Altura: ${altura}`);
-    console.log(`El perímetro del rectángulo es: ${perimetro.toFixed(2)}`);
+    let perimetro = 2 * (largura + altura); 
+    console.log(`Retangulo: Largura = ${largura}, Altura = ${altura}`);
+    console.log(`O perimetro e: ${perimetro}`);
 } else {
-    console.log(`\n--- 4. Cálculo de Perímetro ---`);
-    console.log("Entrada no válida. Por favor, escribe valores numéricos válidos para anchura y altura.");
+    console.log(`Entrada invalida. Certifique-se de que a largura e a altura sao numeros.`);
 }
