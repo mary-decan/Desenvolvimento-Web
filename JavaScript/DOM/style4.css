@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid white;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+#addButton {
+    background-color: green;
+    color: white;
+    margin-right: 10px;
+}
+
+#clearButton {
+    background-color: red;
+    color: white;
+}
+
+#nameList {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#nameList li {
+    padding: 5px 0;
+    border-bottom: 1px dotted white;
+}

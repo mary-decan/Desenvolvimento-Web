@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.quadrado {
+    width: 200px;
+    height: 200px;
+    background-color: blue; 
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease; 
+}
+
+.escondido {
+    display: none; 
+  
+}
+
+
+#toggleButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}

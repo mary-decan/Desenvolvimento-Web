@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#addRowButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#removeRowButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+#dynamicTable {
+    width: 60%;
+    border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+    margin-top: 20px;
+}
+
+#dynamicTable th, #dynamicTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#dynamicTable th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#dynamicTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

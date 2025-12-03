@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: white; 
+    color: black;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+h1 {
+    color: blue;
+}
+
+
+.dark-mode {
+    background-color: black; 
+    color: white;
+}
+
+.dark-mode h1 {
+    color: skyblue;
+}
+
+
+#themeToggle {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
