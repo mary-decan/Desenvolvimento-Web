@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-image-container {
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+    border: 2px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnails-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.thumbnail {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover; 
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s, opacity 0.2s;
+}
+
+.thumbnail:hover {
+    border-color: #007bff;
+    opacity: 0.8;
+}
+
+
+.thumbnail.active {
+    border-color: #28a745; 
+    border-width: 4px;
+}

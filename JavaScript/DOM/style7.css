@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.dropdown-container {
+    position: relative; /* Essencial para que o menu fique posicionado corretamente */
+    display: inline-block;
+    margin-bottom: 150px; /* Para mostrar que o menu flutua */
+}
+
+#dropdownButton {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#dropdownMenu {
+    /* Posição: para flutuar sobre outros elementos */
+    position: absolute; 
+    top: 100%; /* Posiciona logo abaixo do botão */
+    left: 0;
+    
+    /* Estilo visual */
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid #ccc;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+
+    /* Estado inicial: Oculto */
+    display: none; 
+}
+
+#dropdownMenu li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdownMenu li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* CLASSE PRINCIPAL: Classe que o JS adiciona para mostrar o menu */
+.menu-visivel {
+    display: block !important; /* Sobrescreve o display: none */
+}

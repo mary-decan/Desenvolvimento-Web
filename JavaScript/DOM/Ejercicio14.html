@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 15 - Mini Quiz</title>
+    <link rel="stylesheet" href="style14.css" />
+  </head>
+  <body>
+    <h1>Mini Quiz de Conhecimentos Gerais</h1>
+
+    <form id="quizForm">
+      <fieldset class="question-group">
+        <legend>1. Qual planeta é conhecido como o "Planeta Vermelho"?</legend>
+
+        <label><input type="radio" name="q1" value="a" /> Marte</label>
+        <label><input type="radio" name="q1" value="b" /> Júpiter</label>
+        <label><input type="radio" name="q1" value="c" /> Vênus</label>
+      </fieldset>
+
+      <fieldset class="question-group">
+        <legend>2. Quem pintou a Mona Lisa?</legend>
+
+        <label
+          ><input type="radio" name="q2" value="a" /> Vincent van Gogh</label
+        >
+        <label
+          ><input type="radio" name="q2" value="b" /> Leonardo da Vinci</label
+        >
+        <label><input type="radio" name="q2" value="c" /> Pablo Picasso</label>
+      </fieldset>
+
+      <fieldset class="question-group">
+        <legend>3. Qual é o maior oceano do mundo?</legend>
+
+        <label
+          ><input type="radio" name="q3" value="a" /> Oceano Atlântico</label
+        >
+        <label><input type="radio" name="q3" value="b" /> Oceano Índico</label>
+        <label
+          ><input type="radio" name="q3" value="c" /> Oceano Pacífico</label
+        >
+      </fieldset>
+
+      <button type="submit" id="finalizarBtn">Finalizar Quiz</button>
+    </form>
+
+    <hr />
+
+    <div id="resultContainer" class="hidden"></div>
+
+    <script src="script14.js"></script>
+  </body>
+</html>

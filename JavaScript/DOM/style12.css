@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#itemInput {
+    padding: 8px;
+    margin-right: 5px;
+}
+#addButton {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+#dynamicList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    max-width: 400px;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.remove-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
