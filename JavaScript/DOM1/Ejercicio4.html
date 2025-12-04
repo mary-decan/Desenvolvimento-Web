@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Auto-Troca</title>
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <h1>Minha Galeria Dinâmica</h1>
+
+      <div class="main-image-area">
+        <img id="mainImage" src="./img/1.jpeg" alt="Imagem principal" />
+      </div>
+
+      <button id="toggleAutoBtn">Pause Auto-Troca</button>
+
+      <div id="thumbnails" class="thumbnails-container">
+        <img
+          src="./img/2.jpeg"
+          data-index="0"
+          alt="Thumbnail 1"
+          class="thumbnail active"
+        />
+        <img
+          src="./img/3.jpeg"
+          data-index="1"
+          alt="Thumbnail 2"
+          class="thumbnail"
+        />
+        <img
+          src="./img/4.jpeg"
+          data-index="2"
+          alt="Thumbnail 3"
+          class="thumbnail"
+        />
+        <img
+          src="./img/5.jpeg"
+          data-index="3"
+          alt="Thumbnail 4"
+          class="thumbnail"
+        />
+      </div>
+    </div>
+
+    <script src="script4.js"></script>
+  </body>
+</html>
