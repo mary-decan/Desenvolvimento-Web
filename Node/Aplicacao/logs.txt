@@ -1,0 +1,3 @@
+[11/2/2026, 10:52:39 p. m.] Sistema iniciado
+[11/2/2026, 10:52:40 p. m.] Usuário 'Sara' acessou o sistema
+[11/2/2026, 10:52:41 p. m.] Sistema encerrado
