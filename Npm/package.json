@@ -1,0 +1,23 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "pacote teste",
+  "homepage": "https://github.com/mary-decan/Desenvolvimento-Web#readme",
+  "bugs": {
+    "url": "https://github.com/mary-decan/Desenvolvimento-Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mary-decan/Desenvolvimento-Web.git"
+  },
+  "license": "ISC",
+  "author": "Mary",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}

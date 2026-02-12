@@ -1,9 +1,9 @@
 const v = require('./validacoes');
 
 const testes = [
-    { nome: "Al", idade: 25 },    // Nome inválido (curto)
-    { nome: "Sara", idade: -5 },  // Idade inválida
-    { nome: "Bob", idade: 18 }    // Tudo válido
+    { nome: "Al", idade: 25 },    
+    { nome: "Sara", idade: -5 },  
+    { nome: "Bob", idade: 18 }    
 ];
 
 console.log("===== Sistema de Validação =====");
