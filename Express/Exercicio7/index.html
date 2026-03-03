@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Produtos</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        form { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; }
+        .produto-item { background: #f4f4f4; margin: 5px 0; padding: 10px; list-style: none; }
+    </style>
+</head>
+<body>
+
+    <h2>Cadastrar Produto</h2>
+    <form id="produtoForm">
+        <input type="text" id="nome" placeholder="Nome do produto" required>
+        <input type="number" id="preco" placeholder="Preço" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <button id="btnCarregar">Carregar Produtos</button>
+    <ul id="listaProdutos"></ul>
+
+    <script>
+        const API_URL = 'http://localhost:3000/produtos';
+
+        // FUNÇÃO GET: Carregar produtos
+        document.getElementById('btnCarregar').addEventListener('click', async () => {
+            const response = await fetch(API_URL);
+            const produtos = await response.json();
+            
+            const lista = document.getElementById('listaProdutos');
+            lista.innerHTML = '';
+
+            produtos.forEach(p => {
+                const li = document.createElement('li');
+                li.className = 'produto-item';
+                li.innerHTML = `<strong>${p.nome}</strong> - R$ ${p.preco}`;
+                lista.appendChild(li);
+            });
+        });
+
+       
+        document.getElementById('produtoForm').addEventListener('submit', async (e) => {
+            e.preventDefault(); 
+
+            const nome = document.getElementById('nome').value;
+            const preco = document.getElementById('preco').value;
+
+            await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ nome, preco: parseFloat(preco) })
+            });
+
+            alert('Produto cadastrado!');
+            document.getElementById('produtoForm').reset();
+        });
+    </script>
+</body>
+</html>

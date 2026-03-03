@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "cors": "^2.8.6",
+    "espress": "^0.0.0",
     "express": "^5.2.1",
+    "node.js": "^0.0.1-security",
     "nodemon": "^3.1.14"
   },
   "name": "desenvolvimento-web",
