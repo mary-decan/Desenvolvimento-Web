@@ -1,0 +1,19 @@
+<input type="text" id="nome" placeholder="Nome" />
+<input type="number" id="idade" placeholder="Idade" />
+<input type="email" id="email" placeholder="E-mail" />
+<button onclick="cadastrar()">Cadastrar</button>
+
+<div id="mensagem"></div>
+``` ### `cadastro.js` ```javascript async function cadastrar() { const nome =
+document.getElementById('nome').value; const idade =
+document.getElementById('idade').value; const email =
+document.getElementById('email').value; const displayMsg =
+document.getElementById('mensagem'); try { const response = await
+fetch('http://localhost:3000/usuarios', { method: 'POST', headers: {
+'Content-Type': 'application/json' }, body: JSON.stringify({ nome, idade:
+parseInt(idade), email }) }); const data = await response.json(); if
+(!response.ok) { // Mostra o erro real vindo do servidor (Exercício 3)
+displayMsg.innerText = data.erro; displayMsg.style.color = 'red'; } else {
+displayMsg.innerText = "Usuário cadastrado com sucesso!"; displayMsg.style.color
+= 'green'; // Limpar campos... } } catch (err) { displayMsg.innerText = "Erro ao
+conectar com o servidor."; displayMsg.style.color = 'red'; } }
